@@ -24,14 +24,18 @@ class Fastmint:
         )
 
     def welcome(self):
-        print(
-            f"""
-        {Fore.GREEN + Style.BRIGHT}Auto Claim {Fore.BLUE + Style.BRIGHT}Fastmint - BOT
-            """
-            f"""
-        {Fore.GREEN + Style.BRIGHT}Rey? {Fore.YELLOW + Style.BRIGHT}<INI WATERMARK>
-            """
-        )
+        banner = f"""{Fore.GREEN}
+                                         ██████  ██    ██   ██████  ██    ██  ███    ███  ██████   ███████  ██████  
+                                        ██       ██    ██  ██       ██    ██  ████  ████  ██   ██  ██       ██   ██ 
+                                        ██       ██    ██  ██       ██    ██  ██ ████ ██  ██████   █████    ██████  
+                                        ██       ██    ██  ██       ██    ██  ██  ██  ██  ██   ██  ██       ██   ██ 
+                                         ██████   ██████    ██████   ██████   ██      ██  ██████   ███████  ██   ██     
+                                            """
+        print(Fore.GREEN + Style.BRIGHT + banner + Style.RESET_ALL)
+        print(Fore.GREEN + f" Fastmint App")
+        print(Fore.RED + f" FREE TO USE = Join us on {Fore.GREEN}t.me/cucumber_scripts")
+        print(Fore.YELLOW + f" before start please '{Fore.GREEN}git pull{Fore.YELLOW}' to update bot")
+        print(f"{Fore.WHITE}~" * 60)
 
     def format_seconds(self, seconds):
         hours, remainder = divmod(seconds, 3600)
@@ -674,4 +678,6 @@ class Fastmint:
 
 if __name__ == "__main__":
     fastmint = Fastmint()
+    fastmint.clear_terminal()
+    fastmint.welcome()
     fastmint.main()

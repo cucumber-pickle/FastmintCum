@@ -2,5 +2,5 @@
     "farming_upgrade": false,
     "create_wallet": false,
     "account_delay": [5, 10],
-    "cycle_delay": [144000, 288000]
+    "cycle_delay": [14400, 28800]
 }
